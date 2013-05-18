@@ -1,0 +1,20 @@
+<% title "Airplane" %>
+
+<p>
+  <strong>Code:</strong>
+  <%= @airplane.code %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @airplane.name %>
+</p>
+<p>
+  <strong>Seats:</strong>
+  <%= @airplane.seats %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_airplane_path(@airplane) %> |
+  <%= link_to "Destroy", @airplane, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", airplanes_path %>
+</p>

@@ -1,0 +1,16 @@
+<% title "Airport" %>
+
+<p>
+  <strong>Code:</strong>
+  <%= @airport.code %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @airport.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_airport_path(@airport) %> |
+  <%= link_to "Destroy", @airport, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", airports_path %>
+</p>

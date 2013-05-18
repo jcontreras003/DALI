@@ -1,5 +1,11 @@
 Dali::Application.routes.draw do
 
+  resources :airplanes
+
+  resources :airports
+
+  resources :fligths
+
   resources :cities
 
   resources :countries

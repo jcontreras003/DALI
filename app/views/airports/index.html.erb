@@ -1,0 +1,19 @@
+<% title "Airports" %>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+  </tr>
+  <% for airport in @airports %>
+    <tr>
+      <td><%= airport.code %></td>
+      <td><%= airport.name %></td>
+      <td><%= link_to "Show", airport %></td>
+      <td><%= link_to "Edit", edit_airport_path(airport) %></td>
+      <td><%= link_to "Destroy", airport, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Airport", new_airport_path %></p>

@@ -1,0 +1,13 @@
+one:
+  code: MyText
+  date_time: 2013-05-18 13:25:54
+  origin_airport_id: 1
+  destination_airport_id: 1
+  airplane_id: 1
+
+two:
+  code: MyText
+  date_time: 2013-05-18 13:25:54
+  origin_airport_id: 1
+  destination_airport_id: 1
+  airplane_id: 1

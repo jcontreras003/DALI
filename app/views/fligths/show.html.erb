@@ -1,0 +1,28 @@
+<% title "Fligth" %>
+
+<p>
+  <strong>Code:</strong>
+  <%= @fligth.code %>
+</p>
+<p>
+  <strong>Date Time:</strong>
+  <%= @fligth.date_time %>
+</p>
+<p>
+  <strong>Origin Airport:</strong>
+  <%= @fligth.origin_airport_id %>
+</p>
+<p>
+  <strong>Destination Airport:</strong>
+  <%= @fligth.destination_airport_id %>
+</p>
+<p>
+  <strong>Airplane:</strong>
+  <%= @fligth.airplane_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_fligth_path(@fligth) %> |
+  <%= link_to "Destroy", @fligth, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", fligths_path %>
+</p>

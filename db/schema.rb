@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130516005852) do
+ActiveRecord::Schema.define(:version => 20130518180832) do
+
+  create_table "airplanes", :force => true do |t|
+    t.text     "code"
+    t.text     "name"
+    t.integer  "seats"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "airports", :force => true do |t|
+    t.text     "code"
+    t.text     "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "cities", :force => true do |t|
     t.text     "name"
@@ -25,6 +40,16 @@ ActiveRecord::Schema.define(:version => 20130516005852) do
     t.text     "continent"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "fligths", :force => true do |t|
+    t.text     "code"
+    t.datetime "date_time"
+    t.integer  "origin_airport_id"
+    t.integer  "destination_airport_id"
+    t.integer  "airplane_id"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
   end
 
   create_table "users", :force => true do |t|

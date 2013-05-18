@@ -1,0 +1,21 @@
+<% title "Airplanes" %>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Seats</th>
+  </tr>
+  <% for airplane in @airplanes %>
+    <tr>
+      <td><%= airplane.code %></td>
+      <td><%= airplane.name %></td>
+      <td><%= airplane.seats %></td>
+      <td><%= link_to "Show", airplane %></td>
+      <td><%= link_to "Edit", edit_airplane_path(airplane) %></td>
+      <td><%= link_to "Destroy", airplane, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Airplane", new_airplane_path %></p>
