@@ -1,0 +1,9 @@
+<div id='top_header'>
+  <div class='title'> Sistema de Administración de Vuelos y Ofertas -DaLi- </div>
+  <div class ='sub'>
+    <%= link_to 'Javier A. Contreras V.', 'http://www.github.com/jcontreras000' %>
+    <% if logged_in? %>
+    <%= link_to 'Cerrar Sesión', logout_path%>
+    <% end %>
+  </div>
+</div>

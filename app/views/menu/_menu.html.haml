@@ -1,0 +1,7 @@
+#admin.example_content
+  #top_navigation= render_navigation(:level => 1)
+  .clear_float
+  .content
+    .breadcrumbs
+      .title breadcrumbs:
+      = render_navigation(:renderer => :breadcrumbs, :join_with => ' &raquo; ')

@@ -1,0 +1,12 @@
+<%= form_for @country do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_area :name %>
+  </p>
+  <p>
+    <%= f.label :continent %><br />
+    <%= f.text_area :continent %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
