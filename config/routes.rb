@@ -1,5 +1,11 @@
 Dali::Application.routes.draw do
 
+  resources :flight_tickets
+
+  resources :scheduled_flights
+
+  resources :travelers
+
   resources :airplanes
 
   resources :airports

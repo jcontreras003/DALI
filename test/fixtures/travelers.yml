@@ -1,0 +1,15 @@
+one:
+  firts_name: MyText
+  second_name: MyText
+  id_document: MyText
+  email: MyText
+  phone: MyText
+  residence_city_id: 
+
+two:
+  firts_name: MyText
+  second_name: MyText
+  id_document: MyText
+  email: MyText
+  phone: MyText
+  residence_city_id: 

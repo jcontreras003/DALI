@@ -52,8 +52,8 @@ SimpleNavigation::Configuration.run do |navigation|
     #primary.item :key_1, 'name', url, options
 
     
-    primary.item :vuelos, 'Vuelos', ''
-    primary.item :reservaciones, 'Reservaciones', ''  
+    primary.item :vuelos, 'Vuelos', fligths_path
+    primary.item :reservaciones, 'Reservaciones', flight_tickets_path  
     primary.item :ofertas, 'Ofertas', '' 
     primary.dom_class = 'tabs span16'
 

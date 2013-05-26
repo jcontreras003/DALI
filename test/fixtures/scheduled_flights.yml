@@ -1,0 +1,13 @@
+one:
+  flight_id: 1
+  depature_date: 2013-05-18 19:06:49
+  arrival_date: 2013-05-18 19:06:49
+  available_seats: 1
+  closed_flight: false
+
+two:
+  flight_id: 1
+  depature_date: 2013-05-18 19:06:49
+  arrival_date: 2013-05-18 19:06:49
+  available_seats: 1
+  closed_flight: false

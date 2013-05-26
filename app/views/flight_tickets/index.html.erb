@@ -1,0 +1,23 @@
+<% title "Flight Tickets" %>
+
+<table>
+  <tr>
+    <th>Traveler</th>
+    <th>Scheduled Flight</th>
+    <th>Seat Number</th>
+    <th>Luggage Type</th>
+  </tr>
+  <% for flight_ticket in @flight_tickets %>
+    <tr>
+      <td><%= flight_ticket.traveler_id %></td>
+      <td><%= flight_ticket.scheduled_flight_id %></td>
+      <td><%= flight_ticket.seat_number %></td>
+      <td><%= flight_ticket.luggage_type_id %></td>
+      <td><%= link_to "Show", flight_ticket %></td>
+      <td><%= link_to "Edit", edit_flight_ticket_path(flight_ticket) %></td>
+      <td><%= link_to "Destroy", flight_ticket, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Flight Ticket", new_flight_ticket_path %></p>

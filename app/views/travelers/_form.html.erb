@@ -1,0 +1,28 @@
+<%= form_for @traveler do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :firts_name %><br />
+    <%= f.text_area :firts_name %>
+  </p>
+  <p>
+    <%= f.label :second_name %><br />
+    <%= f.text_area :second_name %>
+  </p>
+  <p>
+    <%= f.label :id_document %><br />
+    <%= f.text_area :id_document %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_area :email %>
+  </p>
+  <p>
+    <%= f.label :phone %><br />
+    <%= f.text_area :phone %>
+  </p>
+  <p>
+    <%= f.label :residence_city_id %><br />
+    <%= f.text_field :residence_city_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

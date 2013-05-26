@@ -24,6 +24,7 @@ gem 'jquery-rails'
 
 gem "tabs_on_rails"
 gem "nifty-generators", :group => :development
+gem "rails-erd", :group => :development
 gem "bcrypt-ruby", :require => "bcrypt"
 gem "simple-navigation"
 gem 'haml'

@@ -1,4 +1,4 @@
-class FligthsController < ApplicationController
+class FligthsController < AdminController
   def index
     @fligths = Fligth.all
   end

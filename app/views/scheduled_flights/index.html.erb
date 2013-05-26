@@ -1,0 +1,25 @@
+<% title "Scheduled Flights" %>
+
+<table>
+  <tr>
+    <th>Flight</th>
+    <th>Depature Date</th>
+    <th>Arrival Date</th>
+    <th>Available Seats</th>
+    <th>Closed Flight</th>
+  </tr>
+  <% for scheduled_flight in @scheduled_flights %>
+    <tr>
+      <td><%= scheduled_flight.flight_id %></td>
+      <td><%= scheduled_flight.depature_date %></td>
+      <td><%= scheduled_flight.arrival_date %></td>
+      <td><%= scheduled_flight.available_seats %></td>
+      <td><%= scheduled_flight.closed_flight %></td>
+      <td><%= link_to "Show", scheduled_flight %></td>
+      <td><%= link_to "Edit", edit_scheduled_flight_path(scheduled_flight) %></td>
+      <td><%= link_to "Destroy", scheduled_flight, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Scheduled Flight", new_scheduled_flight_path %></p>

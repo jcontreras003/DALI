@@ -1,0 +1,11 @@
+one:
+  traveler_id: 1
+  scheduled_flight_id: 1
+  seat_number: MyText
+  luggage_type_id: 1
+
+two:
+  traveler_id: 1
+  scheduled_flight_id: 1
+  seat_number: MyText
+  luggage_type_id: 1

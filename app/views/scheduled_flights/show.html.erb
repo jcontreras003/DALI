@@ -1,0 +1,28 @@
+<% title "Scheduled Flight" %>
+
+<p>
+  <strong>Flight:</strong>
+  <%= @scheduled_flight.flight_id %>
+</p>
+<p>
+  <strong>Depature Date:</strong>
+  <%= @scheduled_flight.depature_date %>
+</p>
+<p>
+  <strong>Arrival Date:</strong>
+  <%= @scheduled_flight.arrival_date %>
+</p>
+<p>
+  <strong>Available Seats:</strong>
+  <%= @scheduled_flight.available_seats %>
+</p>
+<p>
+  <strong>Closed Flight:</strong>
+  <%= @scheduled_flight.closed_flight %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_scheduled_flight_path(@scheduled_flight) %> |
+  <%= link_to "Destroy", @scheduled_flight, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", scheduled_flights_path %>
+</p>

@@ -1,0 +1,27 @@
+<% title "Travelers" %>
+
+<table>
+  <tr>
+    <th>Firts Name</th>
+    <th>Second Name</th>
+    <th>Id Document</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Residence City</th>
+  </tr>
+  <% for traveler in @travelers %>
+    <tr>
+      <td><%= traveler.firts_name %></td>
+      <td><%= traveler.second_name %></td>
+      <td><%= traveler.id_document %></td>
+      <td><%= traveler.email %></td>
+      <td><%= traveler.phone %></td>
+      <td><%= traveler.residence_city_id %></td>
+      <td><%= link_to "Show", traveler %></td>
+      <td><%= link_to "Edit", edit_traveler_path(traveler) %></td>
+      <td><%= link_to "Destroy", traveler, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Traveler", new_traveler_path %></p>
