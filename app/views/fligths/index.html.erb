@@ -2,19 +2,15 @@
 
 <table>
   <tr>
-    <th>Code</th>
-    <th>Date Time</th>
-    <th>Origin Airport</th>
-    <th>Destination Airport</th>
-    <th>Airplane</th>
+    <th>Aeropuerto Origen</th>
+    <th>Aeropuerto Destino</th>
+    <th>Aeronave</th>
   </tr>
   <% for fligth in @fligths %>
     <tr>
-      <td><%= fligth.code %></td>
-      <td><%= fligth.date_time %></td>
-      <td><%= fligth.origin_airport_id %></td>
-      <td><%= fligth.destination_airport_id %></td>
-      <td><%= fligth.airplane_id %></td>
+      <td><%= fligth.origin_airport.name %></td>
+      <td><%= fligth.destination_airport.name %></td>
+      <td><%= fligth.airplane.name %></td>
       <td><%= link_to "Show", fligth %></td>
       <td><%= link_to "Edit", edit_fligth_path(fligth) %></td>
       <td><%= link_to "Destroy", fligth, :confirm => 'Are you sure?', :method => :delete %></td>

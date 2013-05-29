@@ -4,7 +4,7 @@
   padding: 0px; }
   #admin.example_content .content {
     padding: 10px;
-    background-color: #afc0a4;
+    background-color: #ECF0E8;
     min-height: 100px; }
   #admin.example_content #top_navigation {
     float: left;
@@ -34,8 +34,8 @@
           #admin.example_content #top_navigation ul li a:hover {
             background-color: #8c7a6e; }
         #admin.example_content #top_navigation ul li a.selected {
-          background-color: #afc0a4;
+          background-color: #ECF0E8;
           border: 1px solid;
-          border-color: #afc0a4;
+          border-color: #ECF0E8;
           color: #2f3c4c;
           font-weight: bold; }

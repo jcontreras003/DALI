@@ -1,24 +1,21 @@
 <%= form_for @fligth do |f| %>
   <%= f.error_messages %>
   <p>
-    <%= f.label :code %><br />
-    <%= f.text_area :code %>
+    <div class="reg_section personal_info">
+    <%= f.label :codigo_de_ruta %><br />
+    <%= f.text_field :code %>
   </p>
   <p>
-    <%= f.label :date_time %><br />
-    <%= f.datetime_select :date_time %>
+    <%= f.label :aeropuerto_origen %><br />
+    <%= f.select :origin_airport_id, options_for_select(Airport.get_all_airports) %>
   </p>
   <p>
-    <%= f.label :origin_airport_id %><br />
-    <%= f.number_field :origin_airport_id %>
+    <%= f.label :aeropuerto_destino %><br />
+    <%= f.select :destination_airport_id, options_for_select(Airport.get_all_airports) %>
   </p>
   <p>
-    <%= f.label :destination_airport_id %><br />
-    <%= f.number_field :destination_airport_id %>
-  </p>
-  <p>
-    <%= f.label :airplane_id %><br />
-    <%= f.number_field :airplane_id %>
+    <%= f.label :aeronave %><br />
+    <%= f.select :airplane_id, options_for_select(Airplane.get_all_airplanes) %>
   </p>
   <p><%= f.submit %></p>
 <% end %>

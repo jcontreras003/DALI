@@ -1,24 +1,15 @@
 <% title "Fligth" %>
-
 <p>
-  <strong>Code:</strong>
-  <%= @fligth.code %>
+  <strong>Aeropuerto Origen:</strong>
+  <%= @fligth.origin_airport.name %>
 </p>
 <p>
-  <strong>Date Time:</strong>
-  <%= @fligth.date_time %>
+  <strong>Aeropuerto Destino:</strong>
+  <%= @fligth.destination_airport.name %>
 </p>
 <p>
-  <strong>Origin Airport:</strong>
-  <%= @fligth.origin_airport_id %>
-</p>
-<p>
-  <strong>Destination Airport:</strong>
-  <%= @fligth.destination_airport_id %>
-</p>
-<p>
-  <strong>Airplane:</strong>
-  <%= @fligth.airplane_id %>
+  <strong>Aeronave:</strong>
+  <%= @fligth.airplane.name %>
 </p>
 
 <p>
